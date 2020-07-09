@@ -10,13 +10,14 @@ Expectancy (mean payout): E(x) = qx where 0 < q < 1, In other words when you bet
 To meet wagering requirements you need to bet repeatedly, but every bet leaves you with less to bet again with. The expected credit remaining after n bets is 
 C(n) = xq^n, and you want to reach a total spent of Mx credits. 
 
-Total spent credits: S(n) = C(0) + C(1) + ... + C(n) = xsum_i=0_i=n(q^i).
+Total spent credits: S(n) = C(0) + C(1) + ... + C(n)<br>
+<img src="https://render.githubusercontent.com/render/math?math=$S(n) = x\sum_{i=0}^{\infty} q^{i}$">
 
 As such, to earn anything you need to reach a number of n bets such that
-S(n) = Mx 
-<=> xsum_i=0_i=n(q^i) = Mx 
-<=> sum_i=0_i=n(q^i) = M
-But this is convergent, lim(n->inf) sum_i=0_i=n(q^i) = n/(n-1) where n = 1/q
+S(n) = Mx <br>
+<img src="https://render.githubusercontent.com/render/math?math=$\Leftrightarrow x\sum_{i=0}^{\infty} q^{i} = Mx$"> <br>
+<img src="https://render.githubusercontent.com/render/math?math=$\Leftrightarrow \sum_{i=0}^{\infty} q^{i} = M$"> <br>
+But this is convergent, <img src="https://render.githubusercontent.com/render/math?math=\lim_{i\to\infty} \sum_{i=0}^{\infty} q^{i} = n/(n-1)"> where n = 1/q
 
 It now becomes obvious what casinos do: they simply choose q and M such that the series sum_i=0_i=n(q^i) is bounded from above by M. 
 n/(n-1) < M and voila, you can never reach wagering requirements, meaning the house keeps your initial deposit. This also means that we can deduce upper bounds for expectancy if we know the wagering requirement M: rearange n/(n-1) < M <=> M/(M-1) < n,  so q < (M-1)/M and E(x) < x(M-1)/M.
