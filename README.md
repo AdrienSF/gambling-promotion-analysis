@@ -19,7 +19,7 @@ S(n) = Mx <br>
 <img src="https://render.githubusercontent.com/render/math?math=$\Leftrightarrow \sum_{i=0}^{\infty} q^{i} = M$"> <br>
 But this is convergent, <img src="https://render.githubusercontent.com/render/math?math=\lim_{i\to\infty} \sum_{i=0}^{\infty} q^{i} = n/(n-1)"> where n = 1/q
 
-It now becomes obvious what casinos do: they simply choose q and M such that the series sum_i=0_i=n(q^i) is bounded from above by M. 
+It now becomes obvious what casinos do: they simply choose q and M such that the series <img src="https://render.githubusercontent.com/render/math?math=\sum_{i=0}^{\infty} q^{i}"> is bounded from above by M. 
 n/(n-1) < M and voila, you can never reach wagering requirements, meaning the house keeps your initial deposit. This also means that we can deduce upper bounds for expectancy if we know the wagering requirement M: rearange n/(n-1) < M <=> M/(M-1) < n,  so q < (M-1)/M and E(x) < x(M-1)/M.
 
 ## Free Spins No Deposit Bonus
